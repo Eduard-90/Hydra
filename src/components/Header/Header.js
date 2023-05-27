@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.scss";
+import { Sidebar } from "./Sidebar/Sidebar";
 import logo from "../../assets/mobile/logo.png";
 import logoText from "../../assets/mobile/logo_text.png";
 import headerImg from "../../assets/mobile/01.png";
@@ -20,7 +21,13 @@ export const Header = () => {
             className="header__top-logo-text"
           />
         </div>
-        <nav className="header__top-nav"></nav>
+        <nav className="header__top-nav" id="outer-container">
+          <Sidebar
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <div id="page-wrap"></div>
+        </nav>
       </section>
       <section>
         <div className="header__img">
