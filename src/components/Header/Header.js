@@ -9,6 +9,8 @@ import vector1 from "../../assets/mobile/vector_1.png";
 import vector2 from "../../assets/mobile/vector_2.png";
 import vector3 from "../../assets/mobile/vector_3.png";
 
+import { Swip } from "./Swiper/Swiper";
+
 export const Header = () => {
   return (
     <header className="header">
@@ -31,10 +33,14 @@ export const Header = () => {
       </section>
       <section>
         <div className="header__img">
-          <img src={headerImg} alt="01" className="header__img-img01" />
+          <img
+            src={headerImg}
+            alt="girl in virtual reality glasses on a pink background"
+            className="header__img-img01"
+          />
           <img
             src={headerImgBackground}
-            alt="02"
+            alt="background"
             className="header__img-img02"
           />
           <img src={vector1} alt="vector 1" className="header__img-vector1" />
@@ -51,12 +57,7 @@ export const Header = () => {
           <button className="header__btn-your-world">BUILD YOUR WORLD</button>
         </div>
         <div className="header__location">
-          <button>
-            <a href="#">
-              Union St, Seattle, WA 98101, <br />
-              United States
-            </a>
-          </button>
+          <Swip />
         </div>
       </section>
     </header>

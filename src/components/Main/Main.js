@@ -10,7 +10,11 @@ export const Main = () => {
           <h2>INTRODUCTION</h2>
           <p>TO HYDRA VR</p>
         </div>
-        <img src={mainImg} alt="03" className="main__introduction-img" />
+        <img
+          src={mainImg}
+          alt="guy in virtual reality glasses looks to the left"
+          className="main__introduction-img"
+        />
         <p className="main__introduction-text">
           Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis
           rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum.

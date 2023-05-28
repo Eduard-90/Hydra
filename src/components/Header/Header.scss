@@ -61,34 +61,19 @@
   &__text {
     width: 303px;
     margin: 40px 0 0 46px;
-    // text-align: justify;
 
     & p {
-      // width: 298px;
-      // height: 49px;
-      font-family: "Montserrat";
-      // font-style: normal;
       font-weight: 700;
       font-size: 24px;
-      // line-height: 29px;
       text-align: center;
       color: #ffffff;
     }
 
     & span {
-      // width: 298px;
-      // height: 39px;
-      // font-family: "Montserrat";
-      // font-style: normal;
-      // font-weight: 700;
       font-size: 36px;
-      // line-height: 44px;
-      // text-align: center;
       background: linear-gradient(91.57deg, #c0b7e8 -1.02%, #8176af 36.25%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      // background-clip: text;
-      // text-fill-color: transparent;
     }
   }
 
@@ -99,11 +84,8 @@
     background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
     border-radius: 40px;
     border: transparent;
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 17px;
     color: #343045;
     cursor: pointer;
 
@@ -115,35 +97,20 @@
 
   &__location {
     margin: 53px 0 0 23px;
+    width: 347px;
+    height: 109px;
+    background: radial-gradient(
+      50% 2900.76% at 50% 53.89%,
+      rgba(58, 52, 86, 0.95) 0%,
+      #211e2e 100%
+    );
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 90px;
+    border: transparent;
+    cursor: pointer;
 
-    & button {
-      width: 347px;
-      height: 109px;
-      background: radial-gradient(
-        50% 2900.76% at 50% 53.89%,
-        rgba(58, 52, 86, 0.95) 0%,
-        #211e2e 100%
-      );
-      box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
-      border-radius: 90px;
-      border: transparent;
-      cursor: pointer;
-
-      &:hover {
-        background: #211e2e;
-      }
-    }
-
-    & a {
-      // width: 195px;
-      // height: 40px;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      color: #ffffff;
-      text-decoration: none;
+    &:hover {
+      background: #211e2e;
     }
   }
 }

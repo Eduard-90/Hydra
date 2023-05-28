@@ -12,6 +12,8 @@
   border-radius: 40px;
 }
 
+// to override styles
+
 #outer-container
   > div:nth-child(1)
   > div:nth-child(2)
@@ -83,8 +85,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
