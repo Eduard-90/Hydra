@@ -1,5 +1,6 @@
 import React from "react";
 import { scaleDown as Menu } from "react-burger-menu";
+
 import "./Sidebar.scss";
 
 export const Sidebar = () => {

@@ -1,6 +1,12 @@
 import React from "react";
+import { SwiperWhy } from "./SwiperWhy/SwiperWhy";
+import { SwiperTechnologies } from "./SwiperTechnologies/SwiperTechnologies";
+import { SwiperHow } from "./SwiperHow/SwiperHow";
+
 import "./Main.scss";
+
 import mainImg from "../../assets/mobile/03.png";
+import technoImg from "../../assets/mobile/10.png";
 
 export const Main = () => {
   return (
@@ -29,6 +35,36 @@ export const Main = () => {
         </p>
         <div>
           <button className="main__introduction-btn">LET'S GET IN TOUCH</button>
+        </div>
+      </section>
+      <section className="main__why">
+        <div className="main__why-title">
+          <h2>WHY BUILD</h2>
+          <p>WITH HYDRA?</p>
+        </div>
+        <div className="main__why-swiper">
+          <SwiperWhy />
+        </div>
+      </section>
+      <section className="main__technologies">
+        <img
+          src={technoImg}
+          alt="girl in virtual reality glasses"
+          className="main__technologies-img"
+        />
+        <h2 className="main__technologies-title">TECHNOLOGIES & HARDWARE</h2>
+        <p className="main__technologies-text">USED BY HYDRA VR.</p>
+        <div className="main__technologies-swiper">
+          <SwiperTechnologies />
+        </div>
+      </section>
+      <section className="main__how">
+        <div className="main__how-title">
+          <h2>HOW WE BUILD</h2>
+          <p>WITH HYDRA VR?</p>
+        </div>
+        <div className="main__how-swiper">
+          <SwiperHow />
         </div>
       </section>
     </main>

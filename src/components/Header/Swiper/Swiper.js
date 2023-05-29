@@ -1,15 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
+
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "./Swiper.scss";
+
 import arrowLeft from "../../../assets/mobile/chevron-circle-left.png";
 import arrowRight from "../../../assets/mobile/chevron-circle-right.png";
 import location from "../../../assets/mobile/Location-Icon.png";
 import mail from "../../../assets/mobile/mail.png";
 import phone from "../../../assets/mobile/phone-call.png";
 
-export const Swip = () => {
+export const SwiperHeader = () => {
   return (
     <Swiper
       modules={[Navigation]}
@@ -41,10 +43,10 @@ export const Swip = () => {
         </a>
       </SwiperSlide>
       <div className="swiper-button-next">
-        <img src={arrowRight} alt="phone" />
+        <img src={arrowRight} alt="arrowRight" />
       </div>
       <div className="swiper-button-prev">
-        <img src={arrowLeft} alt="phone" />
+        <img src={arrowLeft} alt="arrowLeft" />
       </div>
     </Swiper>
   );
