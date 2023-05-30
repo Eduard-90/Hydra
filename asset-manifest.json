@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hydra/static/css/main.4a51aa88.css",
-    "main.js": "/Hydra/static/js/main.eb36a53e.js",
+    "main.css": "/Hydra/static/css/main.21f5f7f6.css",
+    "main.js": "/Hydra/static/js/main.5922e158.js",
     "static/js/787.b31432f0.chunk.js": "/Hydra/static/js/787.b31432f0.chunk.js",
     "static/media/03.png": "/Hydra/static/media/03.89d24e6f27277cc22de6.png",
     "static/media/01.png": "/Hydra/static/media/01.9c3f9e09087a753661f5.png",
@@ -11,15 +11,16 @@
     "static/media/05.png": "/Hydra/static/media/05.a9ae6cb4fb4575b91a53.png",
     "static/media/10.png": "/Hydra/static/media/10.6f8bdbb6aa887f6c0ff6.png",
     "static/media/15.png": "/Hydra/static/media/15.a92d2fb6516ae8824ecd.png",
+    "static/media/footer-logo.png": "/Hydra/static/media/footer-logo.e800c2dd7b80e6e16c9b.png",
     "static/media/vector_2.png": "/Hydra/static/media/vector_2.cbd94858c685b46def0d.png",
     "static/media/vector_1.png": "/Hydra/static/media/vector_1.bc2bfc05a1d41f5c0f15.png",
     "index.html": "/Hydra/index.html",
-    "main.4a51aa88.css.map": "/Hydra/static/css/main.4a51aa88.css.map",
-    "main.eb36a53e.js.map": "/Hydra/static/js/main.eb36a53e.js.map",
+    "main.21f5f7f6.css.map": "/Hydra/static/css/main.21f5f7f6.css.map",
+    "main.5922e158.js.map": "/Hydra/static/js/main.5922e158.js.map",
     "787.b31432f0.chunk.js.map": "/Hydra/static/js/787.b31432f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a51aa88.css",
-    "static/js/main.eb36a53e.js"
+    "static/css/main.21f5f7f6.css",
+    "static/js/main.5922e158.js"
   ]
 }
