@@ -1,0 +1,75 @@
+.footer {
+  &__img {
+    &-logo {
+      width: 185px;
+      height: 187px;
+      margin: 81px 0 0 102px;
+      transition: transform 0.9s ease;
+      filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+
+    &-vector1 {
+      position: absolute;
+      width: 517px;
+      height: 197px;
+      left: -63px;
+      top: 4273px;
+      z-index: -10;
+    }
+    &-vector2 {
+      position: absolute;
+      width: 518px;
+      height: 143px;
+      left: -64px;
+      top: 4420px;
+      z-index: -10;
+    }
+  }
+
+  &__social {
+    &-title {
+      //   width: 206px;
+      //   height: 20px;
+      margin: 40px 0 0 85px;
+      //   font-family: "Montserrat";
+      //   font-style: normal;
+      //   font-weight: 700;
+      font-size: 16px;
+      //   line-height: 20px;
+      color: #ffffff;
+    }
+
+    &-link {
+      display: flex;
+      flex-direction: row;
+
+      &-facebook {
+        margin: 29px 0 0 49px;
+      }
+
+      &-twitter {
+        margin: 29px 0 0 20px;
+      }
+
+      &-linkedin {
+        margin: 29px 0 0 20px;
+      }
+
+      &-youtube {
+        margin: 29px 0 0 20px;
+      }
+
+      &-instagram {
+        margin: 29px 0 0 20px;
+      }
+
+      &-pinterest {
+        margin: 29px 0 0 20px;
+      }
+    }
+  }
+}

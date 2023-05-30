@@ -63,9 +63,59 @@ export const Main = () => {
           <h2>HOW WE BUILD</h2>
           <p>WITH HYDRA VR?</p>
         </div>
-        <div className="main__how-swiper">
+        <div>
           <SwiperHow />
         </div>
+      </section>
+      <section>
+        <form action="" method="post" className="main__form">
+          <h2 className="main__form-title">JOIN HYDRA</h2>
+          <div className="main__form-border"></div>
+          <p className="main__form-text">
+            Let's Build <br /> Your VR Experience
+          </p>
+          <input
+            name="firstName"
+            type="text"
+            placeholder="First Name"
+            className="main__form-firstName"
+          />
+          <input
+            name="lastName"
+            type="text"
+            placeholder="Last Name"
+            className="main__form-lastName"
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            className="main__form-email"
+          />
+          <input
+            name="phoneNumber"
+            type="number"
+            placeholder="Phone Number"
+            className="main__form-phone"
+          />
+          <input
+            name="subject"
+            type="text"
+            placeholder="Subject"
+            className="main__form-subject"
+          />
+          <textarea
+            name="tellUsSomething"
+            placeholder="Tell Us Something..."
+            className="main__form-tellUsSomething"
+          />
+          <input
+            name="submit"
+            type="submit"
+            value="SEND TO HYDRA"
+            className="main__form-submit"
+          />
+        </form>
       </section>
     </main>
   );
