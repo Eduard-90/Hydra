@@ -1,3 +1,5 @@
+@import "./components/Mixins/_mixin";
+
 h1,
 h2,
 h3,
@@ -26,4 +28,9 @@ body {
   max-width: 390px;
   width: 100%;
   background: #302c42;
+
+  @include _1440 {
+    max-width: 768px;
+    width: 100%;
+  }
 }

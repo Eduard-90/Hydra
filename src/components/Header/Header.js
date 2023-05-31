@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
 
 import { Sidebar } from "./Sidebar/Sidebar";
@@ -13,6 +13,22 @@ import vector2 from "../../assets/mobile/vector_2.webp";
 import vector3 from "../../assets/mobile/vector_3.webp";
 
 export const Header = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const isMobileResolution = windowWidth <= 768;
+
   return (
     <header className="header">
       <section className="header__top">
@@ -25,11 +41,29 @@ export const Header = () => {
           />
         </div>
         <nav className="header__top-nav" id="outer-container">
-          <Sidebar
-            pageWrapId={"page-wrap"}
-            outerContainerId={"outer-container"}
-          />
-          <div id="page-wrap"></div>
+          {isMobileResolution ? (
+            <Sidebar
+              pageWrapId={"page-wrap"}
+              outerContainerId={"outer-container"}
+            />
+          ) : (
+            <div>
+              <ul>
+                <li>
+                  <a href="#">ABOUT</a>
+                </li>
+                <li>
+                  <a href="#">SERVICES</a>
+                </li>
+                <li>
+                  <a href="#">TECHNOLOGIES</a>
+                </li>
+                <li>
+                  <a href="#">HOW TO</a>
+                </li>
+              </ul>
+            </div>
+          )}
         </nav>
       </section>
       <section>

@@ -9,6 +9,10 @@
   background: transparent;
   color: #ffffff;
 
+  &:hover {
+    background: radial-gradient(50% 50% at 50% 50%, #564f77 0%, #211e2e 100%);
+  }
+
   &::placeholder {
     color: #ffffff;
   }
