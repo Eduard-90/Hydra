@@ -5,13 +5,13 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "./SwiperTechnologies.scss";
 
-import vive from "../../../assets/mobile/11.png";
-import unity from "../../../assets/mobile/12.png";
-import oculus from "../../../assets/mobile/13.png";
-import unreal from "../../../assets/mobile/14.png";
-import arrowLeft from "../../../assets/mobile/big-chevron-circle-left.png";
-import arrowRight from "../../../assets/mobile/big-chevron-circle-right.png";
-import arrowBackground from "../../../assets/mobile/08.png";
+import vive from "../../../assets/mobile/11.webp";
+import unity from "../../../assets/mobile/12.webp";
+import oculus from "../../../assets/mobile/13.webp";
+import unreal from "../../../assets/mobile/14.webp";
+import arrowLeft from "../../../assets/mobile/big-chevron-circle-left.webp";
+import arrowRight from "../../../assets/mobile/big-chevron-circle-right.webp";
+import arrowBackground from "../../../assets/mobile/08.webp";
 
 export const SwiperTechnologies = () => {
   return (

@@ -4,13 +4,13 @@ import "./Header.scss";
 import { Sidebar } from "./Sidebar/Sidebar";
 import { SwiperHeader } from "./Swiper/Swiper";
 
-import logo from "../../assets/mobile/logo.png";
-import logoText from "../../assets/mobile/logo_text.png";
-import headerImg from "../../assets/mobile/01.png";
-import headerImgBackground from "../../assets/mobile/02.png";
-import vector1 from "../../assets/mobile/vector_1.png";
-import vector2 from "../../assets/mobile/vector_2.png";
-import vector3 from "../../assets/mobile/vector_3.png";
+import logo from "../../assets/mobile/logo.webp";
+import logoText from "../../assets/mobile/logo_text.webp";
+import headerImg from "../../assets/mobile/01.webp";
+import headerImgBackground from "../../assets/mobile/02.webp";
+import vector1 from "../../assets/mobile/vector_1.webp";
+import vector2 from "../../assets/mobile/vector_2.webp";
+import vector3 from "../../assets/mobile/vector_3.webp";
 
 export const Header = () => {
   return (

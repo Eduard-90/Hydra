@@ -1,3 +1,5 @@
+@import "../Extends/_extend";
+
 .header {
   &__top {
     display: flex;
@@ -7,11 +9,7 @@
 
       &-img {
         margin: 52px 0 0 23px;
-        transition: transform 0.9s ease;
-
-        &:hover {
-          transform: rotate(360deg);
-        }
+        @extend %logo-animation;
       }
 
       &-text {
@@ -82,18 +80,7 @@
     width: 292px;
     height: 52px;
     margin: 36px 0 0 52px;
-    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-    border-radius: 40px;
-    border: transparent;
-    font-weight: 700;
-    font-size: 14px;
-    color: #343045;
-    cursor: pointer;
-
-    &:hover {
-      background: linear-gradient(90deg, #c0b7e8 0%, #8176af 100%);
-      color: #fff;
-    }
+    @extend %btn;
   }
 
   &__location {

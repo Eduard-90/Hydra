@@ -5,11 +5,11 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "./Swiper.scss";
 
-import arrowLeft from "../../../assets/mobile/chevron-circle-left.png";
-import arrowRight from "../../../assets/mobile/chevron-circle-right.png";
-import location from "../../../assets/mobile/Location-Icon.png";
-import mail from "../../../assets/mobile/mail.png";
-import phone from "../../../assets/mobile/phone-call.png";
+import arrowLeft from "../../../assets/mobile/chevron-circle-left.webp";
+import arrowRight from "../../../assets/mobile/chevron-circle-right.webp";
+import location from "../../../assets/mobile/Location-Icon.webp";
+import mail from "../../../assets/mobile/mail.webp";
+import phone from "../../../assets/mobile/phone-call.webp";
 
 export const SwiperHeader = () => {
   return (

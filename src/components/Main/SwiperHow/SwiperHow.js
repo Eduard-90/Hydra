@@ -5,10 +5,10 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "./SwiperHow.scss";
 
-import circle from "../../../assets/mobile/15.png";
-import arrowLeft from "../../../assets/mobile/big-chevron-circle-left.png";
-import arrowRight from "../../../assets/mobile/big-chevron-circle-right.png";
-import arrowBackground from "../../../assets/mobile/08.png";
+import circle from "../../../assets/mobile/15.webp";
+import arrowLeft from "../../../assets/mobile/big-chevron-circle-left.webp";
+import arrowRight from "../../../assets/mobile/big-chevron-circle-right.webp";
+import arrowBackground from "../../../assets/mobile/08.webp";
 
 export const SwiperHow = () => {
   return (

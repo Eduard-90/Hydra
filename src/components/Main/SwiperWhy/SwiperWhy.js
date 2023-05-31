@@ -5,14 +5,14 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "./SwiperWhy.scss";
 
-import girl from "../../../assets/mobile/04.png";
-import boy from "../../../assets/mobile/05.png";
-import girlInBlack from "../../../assets/mobile/09.png";
-import boyInBlack from "../../../assets/mobile/06.png";
-import imgBackground from "../../../assets/mobile/07.png";
-import arrowLeft from "../../../assets/mobile/big-chevron-circle-left.png";
-import arrowRight from "../../../assets/mobile/big-chevron-circle-right.png";
-import arrowBackground from "../../../assets/mobile/08.png";
+import girl from "../../../assets/mobile/04.webp";
+import boy from "../../../assets/mobile/05.webp";
+import girlInBlack from "../../../assets/mobile/09.webp";
+import boyInBlack from "../../../assets/mobile/06.webp";
+import imgBackground from "../../../assets/mobile/07.webp";
+import arrowLeft from "../../../assets/mobile/big-chevron-circle-left.webp";
+import arrowRight from "../../../assets/mobile/big-chevron-circle-right.webp";
+import arrowBackground from "../../../assets/mobile/08.webp";
 
 export const SwiperWhy = () => {
   return (

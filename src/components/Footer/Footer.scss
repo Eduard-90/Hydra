@@ -1,15 +1,13 @@
+@import "../Extends/_extend";
+
 .footer {
   &__img {
     &-logo {
       width: 185px;
       height: 187px;
       margin: 81px 0 0 102px;
-      transition: transform 0.9s ease;
       filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
-
-      &:hover {
-        transform: rotate(360deg);
-      }
+      @extend %logo-animation;
     }
 
     &-vector1 {
@@ -32,14 +30,8 @@
 
   &__social {
     &-title {
-      //   width: 206px;
-      //   height: 20px;
       margin: 40px 0 0 85px;
-      //   font-family: "Montserrat";
-      //   font-style: normal;
-      //   font-weight: 700;
       font-size: 16px;
-      //   line-height: 20px;
       color: #ffffff;
     }
 
@@ -71,5 +63,36 @@
         margin: 29px 0 0 20px;
       }
     }
+  }
+
+  &__btn {
+    width: 295px;
+    height: 55px;
+    margin: 47px 0 0 46px;
+    @extend %btn;
+  }
+
+  &__border {
+    width: 289px;
+    height: 2px;
+    margin: 61px 0 0 49px;
+    background: linear-gradient(
+      44.81deg,
+      #343045 -7.67%,
+      #c0b7e8 68.37%,
+      #8176af 86.48%,
+      #343045 99.31%
+    );
+  }
+
+  &__copyright {
+    width: 274px;
+    margin: 38px 0 89px 57px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.13em;
+    color: #ffffff;
   }
 }

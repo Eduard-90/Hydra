@@ -6,16 +6,14 @@
       & h2 {
         width: 216px;
         margin: 59px 0 0 87px;
-        font-size: 26px;
-        color: #ffffff;
+        @extend %title;
       }
 
       & p {
         width: 182px;
         margin: 16px 0 0 104px;
         font-weight: 300;
-        font-size: 26px;
-        color: #ffffff;
+        @extend %title;
       }
     }
 
@@ -36,18 +34,7 @@
       width: 276px;
       height: 56px;
       margin: 34px 0 0 60px;
-      background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-      border: transparent;
-      border-radius: 40px;
-      font-weight: 700;
-      font-size: 14px;
-      color: #343045;
-      cursor: pointer;
-
-      &:hover {
-        background: linear-gradient(90deg, #c0b7e8 0%, #8176af 100%);
-        color: #fff;
-      }
+      @extend %btn;
     }
   }
 
@@ -56,16 +43,14 @@
       & h2 {
         width: 162px;
         margin: 60px 0 0 113px;
-        font-size: 26px;
-        color: #ffffff;
+        @extend %title;
       }
 
       & p {
         width: 187px;
         margin: 16px 0 0 101px;
         font-weight: 300;
-        font-size: 26px;
-        color: #ffffff;
+        @extend %title;
       }
     }
 
@@ -112,16 +97,14 @@
       & h2 {
         width: 221px;
         margin: -10px 0 0 83px;
-        font-size: 26px;
-        color: #ffffff;
+        @extend %title;
       }
 
       & p {
         width: 232px;
         margin: 16px 0 0 77px;
         font-weight: 300;
-        font-size: 26px;
-        color: #ffffff;
+        @extend %title;
       }
     }
   }
@@ -201,18 +184,7 @@
       width: 292px;
       height: 48px;
       margin: 52px 0 0 29px;
-      background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
-      border: transparent;
-      border-radius: 40px;
-      font-weight: 700;
-      font-size: 14px;
-      color: #343045;
-      cursor: pointer;
-
-      &:hover {
-        background: linear-gradient(90deg, #c0b7e8 0%, #8176af 100%);
-        color: #fff;
-      }
+      @extend %btn;
     }
   }
 }

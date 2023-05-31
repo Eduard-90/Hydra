@@ -5,8 +5,8 @@ import { SwiperHow } from "./SwiperHow/SwiperHow";
 
 import "./Main.scss";
 
-import mainImg from "../../assets/mobile/03.png";
-import technoImg from "../../assets/mobile/10.png";
+import mainImg from "../../assets/mobile/03.webp";
+import technoImg from "../../assets/mobile/10.webp";
 
 export const Main = () => {
   return (
