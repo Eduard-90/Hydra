@@ -23,22 +23,52 @@ export const Footer = () => {
       <div className="footer__social">
         <h3 className="footer__social-title">SOCIALIZE WITH HYDRA</h3>
         <div className="footer__social-link">
-          <a href="#" target="_blank" className="footer__social-link-facebook">
+          <a
+            href="https://www.facebook.com/"
+            rel="noreferrer noopener"
+            target="_blank"
+            className="footer__social-link-facebook"
+          >
             <img src={facebook} alt="facebook" />
           </a>
-          <a href="#" target="_blank" className="footer__social-link-twitter">
+          <a
+            rel="noreferrer noopener"
+            href="https://twitter.com/"
+            target="_blank"
+            className="footer__social-link-twitter"
+          >
             <img src={twitter} alt="twitter" />
           </a>
-          <a href="#" target="_blank" className="footer__social-link-linkedin">
+          <a
+            rel="noreferrer noopener"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            className="footer__social-link-linkedin"
+          >
             <img src={linkedin} alt="linkedin" />
           </a>
-          <a href="#" target="_blank" className="footer__social-link-youtube">
+          <a
+            rel="noreferrer noopener"
+            href="https://www.youtube.com/"
+            target="_blank"
+            className="footer__social-link-youtube"
+          >
             <img src={youtube} alt="youtube" />
           </a>
-          <a href="#" target="_blank" className="footer__social-link-instagram">
+          <a
+            rel="noreferrer noopener"
+            href="https://www.instagram.com/"
+            target="_blank"
+            className="footer__social-link-instagram"
+          >
             <img src={instagram} alt="instagram" />
           </a>
-          <a href="#" target="_blank" className="footer__social-link-pinterest">
+          <a
+            rel="noreferrer noopener"
+            href="https://www.pinterest.ca/"
+            target="_blank"
+            className="footer__social-link-pinterest"
+          >
             <img src={pinterest} alt="pinterest" />
           </a>
         </div>
