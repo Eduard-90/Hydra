@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hydra/static/css/main.d78d7fff.css",
-    "main.js": "/Hydra/static/js/main.05c0a855.js",
+    "main.js": "/Hydra/static/js/main.8728e540.js",
     "static/js/787.b31432f0.chunk.js": "/Hydra/static/js/787.b31432f0.chunk.js",
     "static/media/01.webp": "/Hydra/static/media/01.c4005bd73a4dfd910cc6.webp",
     "static/media/03.webp": "/Hydra/static/media/03.2819424dc3cf54adde4a.webp",
@@ -25,9 +25,9 @@
     "static/media/11.webp": "/Hydra/static/media/11.071e2caed2129825cc94.webp",
     "static/media/logo.webp": "/Hydra/static/media/logo.2af45d5a2b7fe29c5d1e.webp",
     "static/media/02.webp": "/Hydra/static/media/02.3aec93d14dc7b85c5455.webp",
+    "index.html": "/Hydra/index.html",
     "static/media/Location-Icon.webp": "/Hydra/static/media/Location-Icon.e8432cdd6bacb8f63d57.webp",
     "static/media/logo_text.webp": "/Hydra/static/media/logo_text.bb8e69b87309e0c6db97.webp",
-    "index.html": "/Hydra/index.html",
     "static/media/mail.webp": "/Hydra/static/media/mail.46148d6714b2456de4ae.webp",
     "static/media/phone-call.webp": "/Hydra/static/media/phone-call.aef634eec0cea3e58898.webp",
     "static/media/facebook.webp": "/Hydra/static/media/facebook.e70895fa690eec96e8b3.webp",
@@ -41,11 +41,11 @@
     "static/media/chevron-circle-right.webp": "/Hydra/static/media/chevron-circle-right.99fba7f8fcac5a3b63c9.webp",
     "static/media/big-chevron-circle-left.webp": "/Hydra/static/media/big-chevron-circle-left.85a1525cefdb44baafe4.webp",
     "main.d78d7fff.css.map": "/Hydra/static/css/main.d78d7fff.css.map",
-    "main.05c0a855.js.map": "/Hydra/static/js/main.05c0a855.js.map",
+    "main.8728e540.js.map": "/Hydra/static/js/main.8728e540.js.map",
     "787.b31432f0.chunk.js.map": "/Hydra/static/js/787.b31432f0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d78d7fff.css",
-    "static/js/main.05c0a855.js"
+    "static/js/main.8728e540.js"
   ]
 }
