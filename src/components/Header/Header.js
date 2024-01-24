@@ -11,6 +11,14 @@ import headerImgBackground from "../../assets/mobile/02.webp";
 import vector1 from "../../assets/mobile/vector_1.webp";
 import vector2 from "../../assets/mobile/vector_2.webp";
 import vector3 from "../../assets/mobile/vector_3.webp";
+import vectorDesk1 from "../../assets/desktop/vector_1.webp";
+import vectorDesk2 from "../../assets/desktop/vector_2.webp";
+import vectorDesk3 from "../../assets/desktop/vector_3.webp";
+import vectorDesk4 from "../../assets/desktop/vector_4.webp";
+import vectorDesk5 from "../../assets/desktop/vector_5.webp";
+import location from "../../assets/mobile/Location-Icon.webp";
+import mail from "../../assets/mobile/mail.webp";
+import phone from "../../assets/mobile/phone-call.webp";
 
 export const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -65,8 +73,14 @@ export const Header = () => {
             </div>
           )}
         </nav>
+        {!isMobileResolution && (
+          <div>
+            <button className="header__top-contact">CONTACT US</button>
+            <button className="header__top-join">JOIN HYDRA</button>
+          </div>
+        )}
       </section>
-      <section>
+      <section className="header__section">
         <div className="header__img">
           <img
             src={headerImg}
@@ -78,21 +92,81 @@ export const Header = () => {
             alt="background"
             className="header__img-img02"
           />
-          <img src={vector1} alt="vector 1" className="header__img-vector1" />
-          <img src={vector2} alt="vector 2" className="header__img-vector2" />
-          <img src={vector3} alt="vector 3" className="header__img-vector3" />
+          <picture className="header__img-vector1">
+            <source media="(max-width: 390px)" srcset={vector1} />
+            <source media="(min-width: 391px)" srcset={vectorDesk1} />
+            <img src={vector1} alt="vector 1" />
+          </picture>
+          <picture className="header__img-vector2">
+            <source media="(max-width: 390px)" srcset={vector2} />
+            <source media="(min-width: 391px)" srcset={vectorDesk2} />
+            <img src={vector2} alt="vector 2" />
+          </picture>
+          <picture className="header__img-vector3">
+            <source media="(max-width: 390px)" srcset={vector3} />
+            <source media="(min-width: 391px)" srcset={vectorDesk3} />
+            <img src={vector3} alt="vector 3" />
+          </picture>
+          {!isMobileResolution && (
+            <img
+              src={vectorDesk4}
+              alt="vector4"
+              className="header__img-vector4"
+            />
+          )}
         </div>
         <div className="header__text">
-          <p>
+          <p className="header__text-main">
             <span>Dive</span> Into The Depths <br /> Of{" "}
             <span>Virtual Reality</span>
           </p>
+          <p className="header__text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
+            Lectus mauris eros in vitae .
+          </p>
         </div>
-        <div>
+        <div className="header__btn">
           <button className="header__btn-your-world">BUILD YOUR WORLD</button>
         </div>
         <div className="header__location">
-          <SwiperHeader />
+          {isMobileResolution ? (
+            <SwiperHeader />
+          ) : (
+            <div className="header__location-grid">
+              <div className="header__location-grid-map">
+                <a href="#">
+                  Pay Us a Visit
+                  <br />
+                  <span>Union St, Seattle, WA 98101, United States</span>
+                </a>
+              </div>
+              <div className="header__location-grid-phone">
+                <a href="tel:(110) 1111-1010">
+                  Give Us a Call
+                  <br />
+                  <span>(110) 1111-1010</span>
+                </a>
+              </div>
+              <div className="header__location-grid-mail">
+                <a href="mailto:contact@HydraVTech.com">
+                  Send Us a Message
+                  <br />
+                  <span>Contact@HydraVTech.com</span>
+                </a>
+              </div>
+              <img
+                src={vectorDesk5}
+                alt="vector 5"
+                className="header__location-grid-vector1"
+              />
+              <img
+                src={vectorDesk5}
+                alt="vector 5"
+                className="header__location-grid-vector2"
+              />
+            </div>
+          )}
         </div>
       </section>
     </header>
