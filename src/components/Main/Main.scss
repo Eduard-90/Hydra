@@ -8,6 +8,8 @@
         width: 216px;
         margin: 59px 0 0 87px;
         @extend %title;
+        @include desktop {
+        }
       }
 
       & p {
