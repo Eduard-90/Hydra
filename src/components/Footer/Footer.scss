@@ -1,6 +1,14 @@
 @import "../Extends/_extend";
+@import "../Mixins/mixin";
 
 .footer {
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1270px;
+    margin: 122px 0 0 86px;
+  }
+
   &__img {
     position: relative;
 
@@ -10,6 +18,9 @@
       margin: 81px 0 0 102px;
       filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.25));
       @extend %logo-animation;
+      @include desktop {
+        margin: 0;
+      }
     }
 
     &-vector1 {
@@ -19,6 +30,12 @@
       left: 26px;
       top: -4px;
       z-index: -10;
+      @include desktop {
+        width: 1435px;
+        height: 363px;
+        left: -75px;
+        top: -310px;
+      }
     }
     &-vector2 {
       position: absolute;
@@ -27,7 +44,42 @@
       left: 10px;
       top: 137px;
       z-index: -10;
+      @include desktop {
+        width: 1437px;
+        height: 264px;
+        left: -91px;
+        top: -45px;
+      }
     }
+  }
+
+  &__border1 {
+    height: 196px;
+    margin-left: 100px;
+  }
+
+  &__main-nav {
+    width: 134px;
+    height: 191px;
+    margin-left: 81px;
+    @extend %footer-nav;
+  }
+
+  &__border2 {
+    height: 196px;
+    margin-left: 104px;
+  }
+
+  &__help-nav {
+    width: 109px;
+    height: 149px;
+    margin-left: 107px;
+    @extend %footer-nav;
+  }
+
+  &__border3 {
+    height: 196px;
+    margin-left: 69px;
   }
 
   &__social {
@@ -35,6 +87,9 @@
       margin: 40px 0 0 85px;
       font-size: 16px;
       color: #ffffff;
+      @include desktop {
+        margin: 0 0 0 71px;
+      }
     }
 
     &-link {
@@ -43,27 +98,46 @@
 
       &-facebook {
         margin: 29px 0 0 49px;
+        @include desktop {
+          margin: 39px 0 0 71px;
+        }
       }
 
       &-twitter {
         margin: 29px 0 0 20px;
+        @include desktop {
+          margin-top: 39px;
+        }
       }
 
       &-linkedin {
         margin: 29px 0 0 20px;
+        @include desktop {
+          margin-top: 39px;
+        }
       }
 
       &-youtube {
         margin: 29px 0 0 20px;
+        @include desktop {
+          margin-top: 39px;
+        }
       }
 
       &-instagram {
         margin: 29px 0 0 20px;
+        @include desktop {
+          margin-top: 39px;
+        }
       }
 
       &-pinterest {
         margin: 29px 0 0 20px;
+        @include desktop {
+          margin-top: 39px;
+        }
       }
+
       & img:hover {
         background-color: #6950cf;
         border-radius: 20px;
@@ -76,6 +150,12 @@
     height: 55px;
     margin: 47px 0 0 46px;
     @extend %btn;
+    @include desktop {
+      margin: 137px 0 0 -290px;
+      width: 214px;
+      height: 48px;
+      font-size: 12px;
+    }
   }
 
   &__border {
@@ -89,6 +169,10 @@
       #8176af 86.48%,
       #343045 99.31%
     );
+    @include desktop {
+      width: 1269px;
+      margin: 77px 0 0 0;
+    }
   }
 
   &__copyright {
@@ -100,5 +184,9 @@
     text-align: center;
     letter-spacing: 0.13em;
     color: #ffffff;
+    @include desktop {
+      width: 693px;
+      margin: 49px 0 59px 289px;
+    }
   }
 }
