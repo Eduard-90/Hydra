@@ -1,0 +1,80 @@
+@import "../../Extends/_extend";
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper__why {
+  &-slide {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-img {
+    margin: 41px 0 0 67px;
+  }
+
+  &-img-bg {
+    position: absolute;
+    left: 55px;
+    top: 28px;
+    z-index: -10;
+  }
+
+  &-title {
+    margin: 34px 0 0 84px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+  &-border {
+    width: 154px;
+    margin: 17px 0 0 86px;
+    border: 1px solid rgba(192, 183, 232, 0.33);
+  }
+
+  &-text {
+    width: 250px;
+    margin: 21px 0 0 33px;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  &-btn {
+    width: 250px;
+    height: 48px;
+    margin: 35px 0 0 33px;
+    @extend %btn;
+  }
+
+  &-arrow-right {
+    position: absolute;
+    left: -22px;
+    top: 197px;
+  }
+
+  &-arrow-bg-right {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: -35px;
+    top: 185px;
+    z-index: -10;
+  }
+
+  &-arrow-left {
+    position: absolute;
+    left: 14px;
+    top: 197px;
+  }
+
+  &-arrow-bg-left {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    left: 3px;
+    top: 185px;
+    z-index: -10;
+  }
+}

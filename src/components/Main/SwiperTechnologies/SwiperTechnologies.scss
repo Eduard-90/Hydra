@@ -1,0 +1,39 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper__technologies {
+  &-img {
+    margin: 25px 0 0 71px;
+  }
+
+  &-arrow {
+    &-right {
+      position: absolute;
+      left: -17px;
+      top: 103px;
+    }
+    &-bg-right {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      left: -30px;
+      top: 90px;
+      z-index: -10;
+    }
+    &-left {
+      position: absolute;
+      left: 14px;
+      top: 103px;
+    }
+    &-bg-left {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      left: 3px;
+      top: 90px;
+      z-index: -10;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin header-location($area, $pad, $cont, $top, $left) {
+  grid-area: $area;
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    padding: 53px 0 0 $pad;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      content: $cont;
+      position: absolute;
+      top: $top;
+      left: $left;
+    }
+
+    & span {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    &:hover {
+      color: rgb(202, 145, 134);
+    }
+  }
+}
+
+@mixin big-arrow($left) {
+  content: url(../../assets/desktop/Component-1.webp);
+  width: 228px;
+  height: 100px;
+  position: absolute;
+  top: -28px;
+  left: $left;
+}
