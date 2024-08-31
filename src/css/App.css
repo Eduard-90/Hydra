@@ -31,6 +31,18 @@ body {
   margin: 0 auto;
   background: #302c42;
 }
+@media (min-width: 769px) {
+  body {
+    max-width: 768px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+    width: 100%;
+  }
+}
 @media (min-width: 1440px) {
   body {
     max-width: 1440px;

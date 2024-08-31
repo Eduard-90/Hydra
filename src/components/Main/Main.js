@@ -33,7 +33,7 @@ export const Main = () => {
 
   return (
     <main className="main">
-      <section class="main__introduction">
+      <section class="main__introduction" id="about">
         <div className="main__introduction-title">
           <h2>INTRODUCTION</h2>
           <p>TO HYDRA VR</p>
@@ -87,7 +87,7 @@ export const Main = () => {
           </button>
         </div>
       </section>
-      <section className="main__why">
+      <section className="main__why" id="services">
         <div className="main__why-title">
           <h2>WHY BUILD</h2>
           <p>WITH HYDRA?</p>
@@ -175,7 +175,7 @@ export const Main = () => {
           </>
         )}
       </section>
-      <section className="main__technologies">
+      <section className="main__technologies" id="technologies">
         <picture className="main__technologies-img">
           <source media="(max-width: 767px)" srcset={technoImg} />
           <source media="(min-width: 768px)" srcset={technoImgDesk} />
@@ -224,7 +224,7 @@ export const Main = () => {
           </>
         )}
       </section>
-      <section className="main__how">
+      <section className="main__how" id="how">
         <div className="main__how-title">
           <h2>HOW WE BUILD</h2>
           <p>WITH HYDRA VR?</p>

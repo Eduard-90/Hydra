@@ -43,25 +43,25 @@ export const Header = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#">ABOUT</a>
+                  <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                  <a href="#">SERVICES</a>
+                  <a href="#services">SERVICES</a>
                 </li>
                 <li>
-                  <a href="#">TECHNOLOGIES</a>
+                  <a href="#technologies">TECHNOLOGIES</a>
                 </li>
                 <li>
-                  <a href="#">HOW TO</a>
+                  <a href="#how">HOW TO</a>
                 </li>
               </ul>
             </div>
           )}
         </nav>
         {!isMobileResolution && (
-          <div>
-            <button className="header__top-contact">CONTACT US</button>
-            <button className="header__top-join">JOIN HYDRA</button>
+          <div className="header__top-btn">
+            <button className="header__top-btn-contact">CONTACT US</button>
+            <button className="header__top-btn-join">JOIN HYDRA</button>
           </div>
         )}
       </section>

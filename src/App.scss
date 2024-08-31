@@ -31,7 +31,14 @@ body {
   width: 100%;
   margin: 0 auto;
   background: #302c42;
-
+  @include tablet {
+    max-width: 768px;
+    width: 100%;
+  }
+  @include laptop {
+    max-width: 1024px;
+    width: 100%;
+  }
   @include desktop {
     max-width: 1440px;
     width: 100%;
