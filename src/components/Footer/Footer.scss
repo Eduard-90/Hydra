@@ -30,6 +30,9 @@
       left: 26px;
       top: -4px;
       z-index: -10;
+      @include tablet {
+        display: none;
+      }
       @include desktop {
         width: 1435px;
         height: 363px;
@@ -44,6 +47,9 @@
       left: 10px;
       top: 137px;
       z-index: -10;
+      @include tablet {
+        display: none;
+      }
       @include desktop {
         width: 1437px;
         height: 264px;

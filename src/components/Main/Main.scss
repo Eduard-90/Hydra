@@ -3,8 +3,21 @@
 
 .main {
   &__introduction {
-    @include desktop {
+    @include tablet {
+      margin: 70px 0 0 40px;
+      position: relative;
+    }
+    @include laptop {
       display: grid;
+      grid-template:
+        "title textDesk" 117px
+        "img titleDesk" 153px
+        "img text" 245px
+        "img btn" 100px
+        / 1fr;
+      margin: 70px 0 0 40px;
+    }
+    @include desktop {
       grid-template:
         "title textDesk" 100px
         "img titleDesk" 245px
@@ -12,11 +25,10 @@
         "img btn" 141px
         / 1fr;
       margin: 90px 0 0 84px;
-      position: relative;
     }
 
     &-title {
-      @include desktop {
+      @include laptop {
         grid-area: title;
       }
 
@@ -24,10 +36,13 @@
         width: 216px;
         margin: 59px 0 0 87px;
         @extend %title;
-        @include desktop {
+        @include tablet {
           width: 298px;
-          margin: 4px 0 0 0;
+          margin: 0 auto;
           font-size: 36px;
+        }
+        @include laptop {
+          margin: 4px 0 0 0;
         }
       }
 
@@ -36,12 +51,21 @@
         margin: 16px 0 0 104px;
         font-weight: 300;
         @extend %title;
-        @include desktop {
-          position: relative;
+        @include tablet {
           width: 251px;
-          margin: 10px 0 0 0;
+          margin: 10px auto;
           font-size: 36px;
+        }
+        @include laptop {
+          position: relative;
+          margin: 10px 0 0 0;
 
+          &::after {
+            @include big-arrow(282px);
+            content: url(../../assets/desktop/arrow-small-right.webp);
+          }
+        }
+        @include desktop {
           &::after {
             @include big-arrow(282px);
           }
@@ -50,17 +74,26 @@
     }
 
     &-text-desk {
-      @include desktop {
-        grid-area: textDesk;
-        margin-left: 86px;
+      @include tablet {
+        width: 570px;
+        margin-left: 40px;
         color: rgb(255, 255, 255);
+      }
+      @include laptop {
+        grid-area: textDesk;
+        width: 499px;
+        margin-left: 30px;
+      }
+      @include desktop {
+        width: 746px;
+        margin-left: 86px;
       }
     }
 
     &-title-desk {
-      @include desktop {
-        grid-area: titleDesk;
-        margin: 147px 0 0 107px;
+      @include tablet {
+        margin-top: 50px;
+        text-align: center;
 
         & h2 {
           color: rgb(255, 255, 255);
@@ -73,32 +106,64 @@
           font-weight: 300;
         }
       }
+      @include laptop {
+        grid-area: titleDesk;
+        margin: 70px 0 0 40px;
+        text-align: left;
+      }
+      @include desktop {
+        margin: 147px 0 0 107px;
+      }
     }
 
     &-vector6 {
-      position: absolute;
-      width: 1449px;
-      height: 256px;
-      left: -107px;
-      top: 205px;
-      z-index: -1;
+      display: none;
+      @include laptop {
+        display: block;
+        position: absolute;
+        width: 1449px;
+        height: 256px;
+        left: -290px;
+        top: 154px;
+        z-index: -1;
+      }
+      @include desktop {
+        left: -107px;
+        top: 205px;
+      }
     }
 
     &-vector7 {
-      position: absolute;
-      width: 1445px;
-      height: 211px;
-      left: -109px;
-      top: 502px;
-      z-index: -1;
+      display: none;
+      @include laptop {
+        display: block;
+        position: absolute;
+        width: 1445px;
+        height: 211px;
+        left: -283px;
+        top: 411px;
+        z-index: -1;
+      }
+      @include desktop {
+        left: -109px;
+        top: 502px;
+      }
     }
 
     &-img {
       width: 336.79px;
       height: 358px;
       margin: 36px 0 0 23px;
-      @include desktop {
+      @include tablet {
+        width: 424px;
+        height: 457px;
+        margin: 50px 0 0 120px;
+      }
+      @include laptop {
         grid-area: img;
+        margin: 50px 0 0 0;
+      }
+      @include desktop {
         width: 524px;
         height: 557px;
         margin: 100px 0 0 0;
@@ -110,16 +175,26 @@
       margin: 51px 0 0 23px;
       font-size: 12px;
       color: #ffffff;
-      @include desktop {
+      @include tablet {
+        width: 570px;
+        margin: 30px 0 0 40px;
+        font-size: 16px;
+      }
+      @include laptop {
         grid-area: text;
+        width: 470px;
+      }
+      @include desktop {
         width: 630px;
         margin: 42px 0 0 108px;
-        font-size: 16px;
       }
     }
 
     &-btn {
-      @include desktop {
+      @include tablet {
+        margin: 50px 0 0 210px;
+      }
+      @include laptop {
         grid-area: btn;
         margin: 28px 0 0 108px;
       }
@@ -129,7 +204,10 @@
         height: 56px;
         margin: 34px 0 0 60px;
         @extend %btn;
-        @include desktop {
+        @include tablet {
+          margin: 0;
+        }
+        @include laptop {
           margin: 0;
           width: 214px;
           height: 48px;
@@ -141,7 +219,7 @@
 
   &__why {
     &-title {
-      @include desktop {
+      @include laptop {
         display: inline-block;
       }
 
@@ -149,10 +227,16 @@
         width: 162px;
         margin: 60px 0 0 113px;
         @extend %title;
-        @include desktop {
+        @include tablet {
           width: 225px;
-          margin: 111px 0 0 84px;
+          margin: 70px auto 0 auto;
           font-size: 36px;
+        }
+        @include laptop {
+          margin: 111px 0 0 40px;
+        }
+        @include desktop {
+          margin-left: 84px;
         }
       }
 
@@ -161,11 +245,22 @@
         margin: 16px 0 0 101px;
         font-weight: 300;
         @extend %title;
-        @include desktop {
-          position: relative;
+        @include tablet {
           width: 259px;
-          margin: 15px 0 0 84px;
+          margin: 15px auto 0 auto;
           font-size: 36px;
+        }
+        @include laptop {
+          position: relative;
+          margin: 15px 0 0 40px;
+
+          &::after {
+            @include big-arrow(270px);
+            content: url(../../assets/desktop/arrow-small-right.webp);
+          }
+        }
+        @include desktop {
+          margin-left: 84px;
 
           &::after {
             @include big-arrow(270px);
@@ -183,25 +278,41 @@
     }
 
     &-text {
-      @include desktop {
+      @include tablet {
+        width: 546px;
+        margin: 50px 0 0 80px;
+        color: rgb(255, 255, 255);
+      }
+      @include laptop {
         display: inline-block;
+        width: 525px;
+        margin: 111px 0 0 150px;
+      }
+      @include desktop {
         width: 652px;
         margin: 111px 0 0 361px;
-        color: rgb(255, 255, 255);
       }
     }
 
     &-desktop {
-      @include desktop {
+      @include tablet {
+        margin-top: 50px;
+      }
+      @include laptop {
         display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0 0 40px;
+      }
+      @include desktop {
+        flex-wrap: nowrap;
         margin: 102px 0 0 84px;
       }
 
       &-card {
-        @include desktop {
+        @include tablet {
           width: 310px;
           height: 511px;
-          margin-right: 10px;
+          margin: 30px auto;
           border-radius: 40px;
           background: radial-gradient(
             50% 50% at 50% 50%,
@@ -209,15 +320,21 @@
             rgb(33, 30, 46) 100%
           );
         }
+        @include laptop {
+          margin: 0 0 30px 110px;
+        }
+        @include desktop {
+          margin: 0 0 0 10px;
+        }
 
         &-img {
-          @include desktop {
+          @include tablet {
             margin: 23px 0 0 46px;
           }
         }
 
         &-title {
-          @include desktop {
+          @include tablet {
             width: 160px;
             margin: 21px auto 17.5px auto;
             color: rgb(255, 255, 255);
@@ -226,7 +343,7 @@
         }
 
         &-border {
-          @include desktop {
+          @include tablet {
             width: 154px;
             height: 0;
             margin: 0 auto 21.5px auto;
@@ -235,7 +352,7 @@
         }
 
         &-text {
-          @include desktop {
+          @include tablet {
             width: 250px;
             margin: 0 0 35px 25px;
             color: rgb(255, 255, 255);
@@ -245,7 +362,7 @@
 
         &-btn {
           @extend %btn;
-          @include desktop {
+          @include tablet {
             width: 154px;
             height: 48px;
             margin-left: 78px;
@@ -265,9 +382,32 @@
       left: 17px;
       top: -53px;
       z-index: -10;
+      @include tablet {
+        left: 29px;
+        top: -65px;
+
+        & img {
+          width: 700px;
+          height: 215px;
+        }
+      }
+      @include laptop {
+        left: 40px;
+        top: -92px;
+
+        & img {
+          width: 935px;
+          height: 255px;
+        }
+      }
       @include desktop {
         left: 84px;
         top: -109px;
+
+        & img {
+          width: 1286px;
+          height: 311px;
+        }
       }
     }
 
@@ -276,10 +416,16 @@
       margin: 107px 0 0 69px;
       font-size: 16px;
       color: #ffffff;
-      @include desktop {
+      @include tablet {
         width: 578px;
-        margin: 222px 0 0 427px;
+        margin: 120px auto 0 auto;
         font-size: 36px;
+      }
+      @include laptop {
+        margin-top: 150px;
+      }
+      @include desktop {
+        margin: 222px 0 0 427px;
       }
     }
 
@@ -288,10 +434,13 @@
       font-weight: 300;
       font-size: 24px;
       color: #ffffff;
-      @include desktop {
+      @include tablet {
         width: 371px;
-        margin: 11px 0 0 522px;
+        margin: 11px auto 0 auto;
         font-size: 36px;
+      }
+      @include desktop {
+        margin: 11px 0 0 522px;
       }
     }
 
@@ -303,29 +452,81 @@
       position: relative;
 
       &-vector {
-        position: absolute;
-        width: 1442px;
-        height: 814px;
-        left: -3px;
-        top: -673px;
-        z-index: -11;
+        display: none;
+        @include laptop {
+          display: block;
+          position: absolute;
+          width: 935px;
+          height: 551px;
+          left: 50px;
+          top: -491px;
+          z-index: -11;
+        }
+        @include desktop {
+          width: 1442px;
+          height: 814px;
+          left: -3px;
+          top: -673px;
+        }
       }
 
       &-arrow {
-        margin: 46px 0 0 670px;
+        width: 75px;
+        height: 75px;
+        margin: 10px 0 0 335px;
+        @include laptop {
+          margin: 22px 0 0 482px;
+        }
+        @include desktop {
+          width: 100px;
+          height: 100px;
+          margin: 46px 0 0 670px;
+        }
       }
 
       &-unreal {
-        margin-left: 153px;
+        @include tablet {
+          margin-left: 95px;
+        }
+        @include laptop {
+          margin-left: 180px;
+        }
+        @include desktop {
+          margin-left: 153px;
+        }
       }
       &-unity {
-        margin-left: 91px;
+        @include tablet {
+          margin-left: 116px;
+        }
+        @include laptop {
+          margin-left: 230px;
+        }
+        @include desktop {
+          margin-left: 91px;
+        }
       }
       &-oculus {
-        margin-left: 71px;
+        @include tablet {
+          margin-left: 42px;
+        }
+        @include laptop {
+          margin-left: 130px;
+        }
+        @include desktop {
+          margin-left: 71px;
+        }
       }
       &-vive {
-        margin-left: 56px;
+        @include tablet {
+          margin-left: 95px;
+        }
+        @include laptop {
+          margin-left: 195px;
+        }
+        @include desktop {
+          margin-left: 56px;
+        }
       }
     }
   }
@@ -379,12 +580,15 @@
       }
 
       &-vector {
-        position: absolute;
-        width: 1449px;
-        height: 163px;
-        top: 222px;
-        left: -88px;
-        z-index: -1;
+        display: none;
+        @include desktop {
+          position: absolute;
+          width: 1449px;
+          height: 163px;
+          top: 222px;
+          left: -88px;
+          z-index: -1;
+        }
       }
 
       &-card {

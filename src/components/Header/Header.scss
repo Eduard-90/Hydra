@@ -215,14 +215,15 @@
       top: -42px;
       z-index: -1;
       @include tablet {
-        display: none;
+        left: 230px;
       }
       @include laptop {
-        display: none;
-      }
-      @include desktop {
         width: 414px;
         height: 669px;
+        left: 209px;
+        top: -70px;
+      }
+      @include desktop {
         left: 475px;
         top: 18px;
       }
@@ -236,14 +237,16 @@
       top: -132px;
       z-index: -1;
       @include tablet {
-        display: none;
-      }
-      @include laptop {
-        display: none;
-      }
-      @include desktop {
         width: 377px;
         height: 845px;
+        left: 150px;
+        top: -184px;
+      }
+      @include laptop {
+        left: 171px;
+        top: -245px;
+      }
+      @include desktop {
         left: 429px;
         top: -144px;
       }
@@ -256,11 +259,9 @@
       left: 6px;
       top: 169px;
       z-index: -1;
-      @include tablet {
-        display: none;
-      }
       @include laptop {
-        display: none;
+        left: -30px;
+        top: 157px;
       }
       @include desktop {
         width: 735px;
@@ -275,15 +276,17 @@
         display: none;
       }
       @include laptop {
-        display: none;
-      }
-      @include desktop {
+        display: block;
         position: absolute;
         width: 238px;
         height: 561px;
+        left: -475px;
+        top: 51px;
+        z-index: -1;
+      }
+      @include desktop {
         left: -525px;
         top: 127px;
-        z-index: -1;
       }
     }
   }

@@ -63,6 +63,11 @@
   top: -4px;
   z-index: -10;
 }
+@media (min-width: 769px) {
+  .footer__img-vector1 {
+    display: none;
+  }
+}
 @media (min-width: 1440px) {
   .footer__img-vector1 {
     width: 1435px;
@@ -78,6 +83,11 @@
   left: 10px;
   top: 137px;
   z-index: -10;
+}
+@media (min-width: 769px) {
+  .footer__img-vector2 {
+    display: none;
+  }
 }
 @media (min-width: 1440px) {
   .footer__img-vector2 {
