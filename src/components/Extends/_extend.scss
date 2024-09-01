@@ -19,6 +19,16 @@
     color: #ffffff;
   }
 
+  @include tablet {
+    width: 450px;
+    height: 60px;
+    padding-left: 30px;
+  }
+  @include laptop {
+    width: 400px;
+    height: 65px;
+    padding-left: 30px;
+  }
   @include desktop {
     width: 524px;
     height: 72px;

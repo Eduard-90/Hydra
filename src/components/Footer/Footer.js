@@ -139,12 +139,12 @@ export const Footer = () => {
       <div className="footer__copyright">
         {isMobileResolution ? (
           <p>
-            2023 © HYDRA LANDING PAGE <br /> BY ZINE. E. FALOUTI <br /> ALL
+            2024 © HYDRA LANDING PAGE <br /> BY ZINE. E. FALOUTI <br /> ALL
             RIGHTS RESERVED
           </p>
         ) : (
           <p>
-            2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS
+            2024 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS
             RESERVED
           </p>
         )}
