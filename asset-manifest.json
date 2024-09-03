@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hydra/static/css/main.231b25a9.css",
-    "main.js": "/Hydra/static/js/main.f4a29bec.js",
+    "main.css": "/Hydra/static/css/main.385e32c6.css",
+    "main.js": "/Hydra/static/js/main.a06aac02.js",
     "static/js/787.b31432f0.chunk.js": "/Hydra/static/js/787.b31432f0.chunk.js",
     "static/media/01.webp": "/Hydra/static/media/01.c4005bd73a4dfd910cc6.webp",
     "static/media/03.webp": "/Hydra/static/media/03.2819424dc3cf54adde4a.webp",
@@ -55,12 +55,12 @@
     "static/media/shape.webp": "/Hydra/static/media/shape.12ffdb2048e8704b809f.webp",
     "static/media/Component-1.webp": "/Hydra/static/media/Component-1.5b6de6a3d4d1fce2df97.webp",
     "static/media/vector_13.webp": "/Hydra/static/media/vector_13.d21ff35d169fcba1e10a.webp",
-    "main.231b25a9.css.map": "/Hydra/static/css/main.231b25a9.css.map",
-    "main.f4a29bec.js.map": "/Hydra/static/js/main.f4a29bec.js.map",
+    "main.385e32c6.css.map": "/Hydra/static/css/main.385e32c6.css.map",
+    "main.a06aac02.js.map": "/Hydra/static/js/main.a06aac02.js.map",
     "787.b31432f0.chunk.js.map": "/Hydra/static/js/787.b31432f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.231b25a9.css",
-    "static/js/main.f4a29bec.js"
+    "static/css/main.385e32c6.css",
+    "static/js/main.a06aac02.js"
   ]
 }
