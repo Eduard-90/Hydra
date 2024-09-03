@@ -294,7 +294,7 @@ export const Main = () => {
         )}
       </section>
       <section>
-        <form action="" method="post" className="main__form">
+        <form action="" method="post" className="main__form" id="join">
           <h2 className="main__form-title">JOIN HYDRA</h2>
           <div className="main__form-border"></div>
           {isMobileResolution ? (

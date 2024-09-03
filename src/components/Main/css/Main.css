@@ -161,7 +161,7 @@
 }
 @media (min-width: 1440px) {
   .main__introduction-text-desk {
-    width: 746px;
+    width: 653px;
     margin-left: 86px;
   }
 }
@@ -199,17 +199,19 @@
   .main__introduction-vector6 {
     display: block;
     position: absolute;
-    width: 1449px;
-    height: 256px;
-    left: -290px;
-    top: 154px;
+    width: 868px;
+    height: 154px;
+    left: 90px;
+    top: 199px;
     z-index: -1;
   }
 }
 @media (min-width: 1440px) {
   .main__introduction-vector6 {
-    left: -107px;
-    top: 205px;
+    width: 1449px;
+    height: 256px;
+    left: -120px;
+    top: 225px;
   }
 }
 .main__introduction-vector7 {
@@ -219,16 +221,18 @@
   .main__introduction-vector7 {
     display: block;
     position: absolute;
-    width: 1445px;
-    height: 211px;
-    left: -283px;
-    top: 411px;
+    width: 945px;
+    height: 152px;
+    left: 13px;
+    top: 468px;
     z-index: -1;
   }
 }
 @media (min-width: 1440px) {
   .main__introduction-vector7 {
-    left: -109px;
+    width: 1445px;
+    height: 211px;
+    left: -115px;
     top: 502px;
   }
 }
@@ -583,7 +587,7 @@
   .main__technologies-desk-vector {
     width: 1442px;
     height: 814px;
-    left: -3px;
+    left: -30px;
     top: -673px;
   }
 }
@@ -769,9 +773,9 @@
   .main__how-desk-vector {
     display: block;
     position: absolute;
-    width: 1449px;
-    height: 163px;
-    top: 222px;
+    width: 1410px;
+    height: 141px;
+    top: 225px;
     left: -88px;
     z-index: -1;
   }

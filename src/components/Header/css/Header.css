@@ -15,6 +15,20 @@
 .header__top-btn-contact::placeholder {
   color: #ffffff;
 }
+@media (min-width: 769px) {
+  .header__top-btn-contact {
+    width: 450px;
+    height: 60px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__top-btn-contact {
+    width: 400px;
+    height: 65px;
+    padding-left: 30px;
+  }
+}
 @media (min-width: 1440px) {
   .header__top-btn-contact {
     width: 524px;
@@ -241,7 +255,7 @@
 }
 @media (min-width: 1024px) {
   .header__img-img01 {
-    margin: 60px 0 0 130px;
+    margin: 60px 0 0 70px;
   }
 }
 @media (min-width: 1440px) {
@@ -269,7 +283,7 @@
 }
 @media (min-width: 1024px) {
   .header__img-img02 {
-    left: 112px;
+    left: 52px;
   }
 }
 @media (min-width: 1440px) {
@@ -295,16 +309,22 @@
 }
 @media (min-width: 1024px) {
   .header__img-vector1 {
-    width: 414px;
-    height: 669px;
-    left: 209px;
-    top: -70px;
+    left: 227px;
+    top: 12px;
+  }
+  .header__img-vector1 img {
+    width: 242px;
+    height: 493px;
   }
 }
 @media (min-width: 1440px) {
   .header__img-vector1 {
-    left: 475px;
+    left: 455px;
     top: 18px;
+  }
+  .header__img-vector1 img {
+    width: 416px;
+    height: 675px;
   }
 }
 .header__img-vector2 {
@@ -317,8 +337,6 @@
 }
 @media (min-width: 769px) {
   .header__img-vector2 {
-    width: 377px;
-    height: 845px;
     left: 150px;
     top: -184px;
   }
@@ -326,7 +344,11 @@
 @media (min-width: 1024px) {
   .header__img-vector2 {
     left: 171px;
-    top: -245px;
+    top: -42px;
+  }
+  .header__img-vector2 img {
+    width: 253px;
+    height: 557px;
   }
 }
 @media (min-width: 1440px) {
@@ -334,27 +356,35 @@
     left: 429px;
     top: -144px;
   }
+  .header__img-vector2 img {
+    width: 383px;
+    height: 846px;
+  }
 }
 .header__img-vector3 {
   position: absolute;
-  width: 300px;
-  height: 352px;
   left: 6px;
   top: 169px;
   z-index: -1;
 }
 @media (min-width: 1024px) {
   .header__img-vector3 {
-    left: -30px;
-    top: 157px;
+    left: 59px;
+    top: 118px;
+  }
+  .header__img-vector3 img {
+    width: 445px;
+    height: 446px;
   }
 }
 @media (min-width: 1440px) {
   .header__img-vector3 {
-    width: 735px;
-    height: 419px;
-    left: 173px;
-    top: 253px;
+    left: 140px;
+    top: 260px;
+  }
+  .header__img-vector3 img {
+    width: 736px;
+    height: 423px;
   }
 }
 @media (min-width: 769px) {
@@ -607,7 +637,7 @@
 }
 @media (min-width: 1024px) {
   .header__location {
-    margin: 70px 0 0 40px;
+    margin: 70px 0 0 25px;
     width: 900px;
     height: 150px;
   }

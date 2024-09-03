@@ -174,7 +174,7 @@
         margin: 60px 0 0 150px;
       }
       @include laptop {
-        margin: 60px 0 0 130px;
+        margin: 60px 0 0 70px;
       }
       @include desktop {
         width: 490px;
@@ -197,7 +197,7 @@
         top: 44px;
       }
       @include laptop {
-        left: 112px;
+        left: 52px;
       }
       @include desktop {
         width: 524px;
@@ -218,14 +218,22 @@
         left: 230px;
       }
       @include laptop {
-        width: 414px;
-        height: 669px;
-        left: 209px;
-        top: -70px;
+        left: 227px;
+        top: 12px;
+
+        & img {
+          width: 242px;
+          height: 493px;
+        }
       }
       @include desktop {
-        left: 475px;
+        left: 455px;
         top: 18px;
+
+        & img {
+          width: 416px;
+          height: 675px;
+        }
       }
     }
 
@@ -237,37 +245,51 @@
       top: -132px;
       z-index: -1;
       @include tablet {
-        width: 377px;
-        height: 845px;
         left: 150px;
         top: -184px;
       }
       @include laptop {
         left: 171px;
-        top: -245px;
+        top: -42px;
+
+        & img {
+          width: 253px;
+          height: 557px;
+        }
       }
       @include desktop {
         left: 429px;
         top: -144px;
+
+        & img {
+          width: 383px;
+          height: 846px;
+        }
       }
     }
 
     &-vector3 {
       position: absolute;
-      width: 300px;
-      height: 352px;
       left: 6px;
       top: 169px;
       z-index: -1;
       @include laptop {
-        left: -30px;
-        top: 157px;
+        left: 59px;
+        top: 118px;
+
+        & img {
+          width: 445px;
+          height: 446px;
+        }
       }
       @include desktop {
-        width: 735px;
-        height: 419px;
-        left: 173px;
-        top: 253px;
+        left: 140px;
+        top: 260px;
+
+        & img {
+          width: 736px;
+          height: 423px;
+        }
       }
     }
 
@@ -453,7 +475,7 @@
       }
     }
     @include laptop {
-      margin: 70px 0 0 40px;
+      margin: 70px 0 0 25px;
       width: 900px;
       height: 150px;
 

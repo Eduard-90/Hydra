@@ -42,19 +42,19 @@ export const Footer = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#">ABOUT</a>
+                  <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                  <a href="#">SERVICES</a>
+                  <a href="#services">SERVICES</a>
                 </li>
                 <li>
-                  <a href="#">TECHNOLOGIES</a>
+                  <a href="#technologies">TECHNOLOGIES</a>
                 </li>
                 <li>
-                  <a href="#">HOW TO</a>
+                  <a href="#how">HOW TO</a>
                 </li>
                 <li>
-                  <a href="#">JOIN HYDRA</a>
+                  <a href="#join">JOIN HYDRA</a>
                 </li>
               </ul>
             </div>
